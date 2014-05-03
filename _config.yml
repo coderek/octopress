@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://derekzeng.me
+title: Talk the talk
+subtitle:  
+author: Derek Zeng
 simple_search: https://www.google.com/search
-description:
+description: About life, work and the thoughts
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
