@@ -1,2 +1,43 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+
+
+.title {
+  h1 {
+    a {
+      font-size: 20px;
+    }
+    font-size: 25px;
+    border-left: 10px solid #ddd;
+    padding-left: 20px;
+  }
+}
+
+article {
+  header {
+    @extend .title;
+    margin-bottom: 10px;
+  }
+  footer {
+    padding-bottom: 10px;
+  }
+
+  .entry-content {
+    font-size: 16px;
+  }
+}
+
+#blog-archives {
+  article {
+    font-size: 14px !important;
+    /*@extend .title;*/
+  }
+}
+
+html {
+  background: white;
+  body {
+    box-shadow: 0 0 10px 10px #ddd;
+  }
+}

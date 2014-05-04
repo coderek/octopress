@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://derekzeng.me
-title: Talk the talk
-subtitle:  
+title: Code the code
+subtitle: Talk the talk  
 author: Derek Zeng
 simple_search: https://www.google.com/search
-description: About life, work and the thoughts
+description: Here and there about living a meaningful life.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -54,7 +54,7 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
-# blog_index_asides:
+blog_index_asides: [asides/fav_sites.html]
 # post_asides:
 # page_asides:
 
@@ -90,7 +90,7 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
+disqus_short_name: derekzengme
 disqus_show_comment_count: false
 
 # Google Analytics
