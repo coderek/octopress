@@ -10,7 +10,7 @@ categories: optimization
 
 ## Hierarchical Structure
 
-<!--more-->
+
 
 这个主要说的是事物组织的方式。如果是有等级划分，从大到小，从粗到细，从高到低的话，一个复杂的事物就可以运行的井井有条，这主要要归功于高效的检索。比如说，用Binary Partition Subdivision 做occlusion culling, 如果上面的node 不可见那么下面的node就不用再看了，这样一下子就可以省掉很多多余的运算，很快就能找到哪些是可见的多边形。其实这里的高效是利用了Binary Tree的高效，类似的有Quad Tree和Oct Tree.
 

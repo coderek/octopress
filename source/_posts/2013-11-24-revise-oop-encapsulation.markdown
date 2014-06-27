@@ -10,7 +10,7 @@ In OOP, objects consist of data and methods. Data can be used to describe the st
 
 Encapsulation is also called data hiding. It's the abstraction an object introduces to hide away data from outside, so that the user of the object cannot access the internals of the object directly other than using its exposed methods. 
 
-<!--more-->
+
 
 ## why care about it?
 

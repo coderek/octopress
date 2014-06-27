@@ -10,7 +10,7 @@ reference: [http://www.reigndesign.com/blog/using-your-own-sqlite-database-in-an
 
 我的项目里需要做一个数据库储存很多节点信息。显然如果在runtime的时候从原始数据文件载入到数据库会相当耗时，我采取的方法是事先在电脑上生成一个.db的sqlite数据库文件，然后在拷贝到android 项目里面。具体做法如下：
 
-<!--more-->
+
 
 1. 使用 sqlite database browser 创建数据库及表。
 

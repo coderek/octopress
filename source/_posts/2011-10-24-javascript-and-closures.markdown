@@ -13,7 +13,7 @@ categories: javascript closure
 现在读JavaScript，对这个closure算是有一定理解。
 Closure 中文叫做闭包，在JavaScript里函数都是有闭包的特性。
 
-<!--more-->
+
 
 理解闭包必须分两步：
 1.JS里面函数是first-class function，就是说函数跟class是一个级别的。 函数可以直接赋值到变量上，它的类型为”function”，这个变量可以直接用来invoke函数。

@@ -14,7 +14,7 @@ Before HTML5 history API, anchor link with `#` post-fix address is used as a wor
 
 The major shortcomings of this workaround is the use of `#` sign. It's not search engine friendly; it makes url look ugly. Other problem is the lack of control over the browser history stack.
 
-<!--more-->
+
 
 History API is exact solution for this. Details of the spec can be found [here](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history). Due to its use of ordinary url, the ajax request and normal web link will be indistinguishable. As a result, there are 2 new interesting ways of constructing web applications.
 

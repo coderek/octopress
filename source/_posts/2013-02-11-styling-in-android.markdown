@@ -8,11 +8,11 @@ categories: android
 
 Android Development team tries to make styling applications as easy as styling a web page. We can change the look and feel of every element within the application. For example, the background of textbox, the background of action bar, or the shape of a button. The android styling also has the feature of heirachical inheritance of styles. If the application use one style, while the activity use another, the activity's will overwrite the applications. This rule applies up to every view group and single element. This allows easy reuse of styles. The developer only needs to overwrite the style needed. 
 
-<!--more-->
+
 
 The major source of reference about styling is at [here](http://developer.android.com/guide/topics/ui/themes.html). But it doesn't give out a detail documentation on which style applies to which element. Instead, it only gives two system styling files that contains whole bunch of xmls for major system styles, that is holo and holo white. The links is [styles.xml](https://android.googlesource.com/platform/frameworks/base/+/refs/heads/master/core/res/res/values/styles.xml) and [themes.xml](https://android.googlesource.com/platform/frameworks/base/+/refs/heads/master/core/res/res/values/themes.xml). I need to dig into the lines and try out several styles before I can find the one needed. Though it's a bit troublesome, but it's not difficult at all.  
 
-<!-- more -->
+
 
 My current task is to style the action bar as well as the tab bar. Basically, I want:
 
@@ -33,7 +33,7 @@ Because I want the most of my background to be dark, thus, the first thing I do 
 
 <!-- set theme for the application in AndroidManifest.xml -->
 <application android:theme="@style/store" >
-<!-- more -->
+
 ```
 
 After setting the base style, I need to set the sub-style for the activity. This is the tabbed activity I want to style. There may be other activities in the same application that having different sub-style. But all of them should inherit from the `store` style.

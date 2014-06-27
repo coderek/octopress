@@ -15,7 +15,7 @@ Netscape 6.0 is finally going into its first public beta. There never was a vers
 
 It’s a bit smarmy of me to criticize them for waiting so long between releases. They didn’t do it on purpose, now, did they?
 
-<!--more-->
+
 
 Well, yes. They did. They did it by making the single worst strategic mistake that any software company can make:
 

@@ -8,7 +8,7 @@ categories: programming
 
 OOP language is used to model all kinds of objects in universe. With different  levels of abstraction, there are certain hierachical relationships among the objects. Inheritance is used to describe such relationships. Inheritance is a key concept of OOP. All the OOP langauges have some kind of built in inheritance. 
 
-<!-- more -->
+
 
 For example, all **Ruby** objects inherits `Object` class; `Object` class inherits `Kernel` module and `BasicObject` class.
 

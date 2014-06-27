@@ -12,7 +12,7 @@ I was reading coolshell.cn tonight. The author refers to the chapter of modulari
 
 It reminds me an argument with a senior java engineer happened a while ago. 
 
-<!-- more -->
+
 
 The argument started by me complaining about the slow progression of the project. The project we are doing exposes RESTful API to Client applications to do various tasks. The senior engineer stuck at the design phases and some minor issues. I am dependent on his job which I think is straight-forward. After some time, I grow impatient to him and start complaining. I always told him that we need to start by designing the APIs we want to expose first, and document for those APIs. The reason I gave is exactly the same as the excerpt above. I think, design by API can reveal our targets effectively and we could start working concurrently on server and client side efficiently. He thinks this is unimportant. I don't really know his reason. He can't really articulate well anyway. The argument ended up by him calling me idiot. 
 

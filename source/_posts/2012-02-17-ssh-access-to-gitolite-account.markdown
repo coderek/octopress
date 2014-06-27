@@ -3,12 +3,12 @@ layout: post
 title: "SSH access to gitolite account"
 date: 2012-02-17 15:56 +0800
 comments: true
-categories: git
+categories: tools
 ---
 
 The common practice is to create a repo user account (git) to host all the repository. So in principle, users or admin should not have the need to access it through SSH. But I did set it up for myself using my own account. So I got problem accessing it through SSH, because gitolite blacklisted my Key and it only allow SSH to run “info” command, which is to view all the hosting repositories.
 
-<!--more-->
+
 
 After reading the documentation, I found the solution is to run:
 

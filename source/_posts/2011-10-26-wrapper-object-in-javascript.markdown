@@ -15,7 +15,7 @@ console.log(str.length); //4
 
 But for object, every property is mutable. If we change the length to 10, it should be changed to 10. However, this is not the case.
 
-<!--more-->
+
 
 ```javascript
 str.length =10;
