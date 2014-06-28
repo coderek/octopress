@@ -1,43 +1,62 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
+html, body {
+  background-color: #eee;
+}
 
-
-.title {
-  h1 {
-    a {
-      font-size: 20px;
+body {
+  max-width: 800px;
+  >header {
+    // background: url('/images/header_bg.jpg') no-repeat 10% 90%;
+    h1 {
+      width: 100%;
+      display: block;
     }
-    font-size: 25px;
-    border-left: 10px solid #ddd;
-    padding-left: 20px;
   }
+
+  box-shadow: 0 0 1px 1px #aaa;
 }
 
 article {
-  header {
-    @extend .title;
-    margin-bottom: 10px;
-  }
-  footer {
-    padding-bottom: 10px;
+  >header {
+    h1.entry-title {
+      font-size: 150%;
+    }
   }
 
-  .entry-content {
-    font-size: 16px;
+  p {
+    font-family: $sans;
   }
+
 }
 
 #blog-archives {
   article {
-    font-size: 14px !important;
-    /*@extend .title;*/
+    padding-left: 4.5em !important;
+    >h1 {
+      font-size: 120%;
+    }
+    >footer {
+    }
   }
 }
 
-html {
-  background: white;
-  body {
-    box-shadow: 0 0 10px 10px #ddd;
+body > footer {
+  border-radius: 0;
+}
+
+a.category {
+  // background: #ddd;
+  color: #333;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 2px;
+  font-style: italic;
+  text-transform: capitalize;
+
+  &:visited, &:hover {
+    color: #333;
+    text-decoration: none;
   }
 }

@@ -3,7 +3,8 @@ layout: post
 title: "sublime tips"
 date: 2014-06-26 21:00:33 -0400
 comments: true
-categories: tools, tips
+categories: tools tips
+published: false
 ---
 
 Here are a few good tips I found recently about sublime.
