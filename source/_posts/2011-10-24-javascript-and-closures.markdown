@@ -3,7 +3,7 @@ layout: post
 title: "JavaScript and Closures"
 date: 2011-10-24 15:37 +0800
 comments: true
-categories: javascript closure
+categories: JavaScript
 ---
 
 因为新工作的缘故这两天开始学习JavaScript。

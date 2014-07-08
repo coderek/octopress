@@ -3,7 +3,7 @@ layout: post
 title: "wrapper object in javascript"
 date: 2011-10-26 15:35 +0800
 comments: true
-categories: javascript
+categories: JavaScript
 ---
 
 In JavaScript, primitive types behave like objects. They use dot expression to access certain methods. For example

@@ -3,7 +3,7 @@ layout: post
 title: "a shallow look at: lodash - functions"
 date: 2014-06-08 21:15:51 -0400
 comments: true
-categories: javascript
+categories: JavaScript
 ---
 
 For qutie a long time, i have been a faithful user of underscore/lodash utility library. The functions i've used are limited to only those simple ones however. e.g. `map`, `reduce`, `filter`, `each`, `range`, `pick`, `pluck` . I thought I wouldn't have a need for more complicated ones, thus never look at other functions.
@@ -59,11 +59,22 @@ toastr.warning = _.throttle(toastr.warning, 1000, {trailing: false});
 var a = {
     b: 1,
     c: _.throttle(function () {
-        console.log(this.b);
-    }, 100)
+        return this.b;
+    }, 100),
+    d: function () {
+        return this.b;
+    }
 };
 
-a.c() // 1
+alert(a.c()); // 1
+
+var e = _.throttle(a.d, 100);
+
+alert(e()); // undefined
+
+var f = _.throttle(a.d.bind(a), 100);
+
+alert(f()); // 1
 
 ```
 
@@ -90,6 +101,7 @@ Backbone.History.prototype.navigate = _.wrap(Backbone.History.prototype.navigate
 ### `partial` or `parital right`
 
 It creates a copy of a function that bind some of the arguments of a function. The context is not changed.
+John Resig has some notes about his technique. [http://ejohn.org/blog/partial-functions-in-javascript/](http://ejohn.org/blog/partial-functions-in-javascript/)
 
 ```javascript
 // backbone model
@@ -103,4 +115,13 @@ function sanitizeUrl(attrName, model, url) {
     model.set(attrName, sanitizedUrl);
 }
 
+```
+
+### `defer` 
+
+It uses setTimeout 0 to defer compute-intensive task to the end of task queue, so UI renderings do not need to wait for the completion of the task.
+
+```javascript
+_.defer(function(){ alert('deferred'); });
+// Returns from the function before the alert runs.
 ```
