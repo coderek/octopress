@@ -61,3 +61,69 @@ To use this feature, one must instantiate a `ControlFlow` instance and call the 
 What's even better is that, there can be multiple `ControlFlow` running concurrently. It's basically a simulated thread. This is a higher level *thread* comparing to JavaAcript Callbacks.
 
 The cost of this approach is that the functions need to be built on promise and wrapped using `ControlFlow`. A layer of abstraction. Is it worthy? At least, IMHO, writing BBD using this style is a good idea.  
+
+
+PS: I just found that there is this briliant middleware pattern which is used in [connect](https://github.com/senchalabs/connect/blob/master/lib/proto.js#L82) which express is based on. 
+
+``` javascript
+//process n number of async functions in order. used when promises aren't viable e.g. cross file or service calls.
+
+var MiddlewareService = function(){
+  var stack = [],
+    isProcessingStack = false,
+    commonState = { task: 0 };
+
+
+  function push(fn){
+    stack.push(fn);
+
+    if(!isProcessingStack)
+      next();
+  }
+
+  function next(err){
+    if(err)
+      throw new Error(err);
+    
+    var fn = stack.shift();
+
+    if(fn){
+      isProcessingStack = true;
+      fn(commonState, next);
+    }
+    else
+      isProcessingStack = false;
+  }
+
+  return {
+    push: push
+  };
+}();
+
+
+
+function doWork(commonState, next){
+  commonState.task++;
+  console.log('Starging something async:' + commonState.task);
+
+  setTimeout(function(){
+    console.log('Completed async task: ' + commonState.task);
+    next();
+  }, 2000);  
+}
+
+MiddlewareService.push(doWork);
+MiddlewareService.push(doWork);
+MiddlewareService.push(doWork);
+
+/* OUTPUT
+
+Starging something async:1
+Completed async task: 1
+Starging something async:2
+Completed async task: 2
+Starging something async:3
+Completed async task: 3
+
+*/
+```

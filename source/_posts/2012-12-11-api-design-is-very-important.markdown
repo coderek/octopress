@@ -3,7 +3,8 @@ layout: post
 title: "API design is very important"
 date: 2012-12-11 23:34 +0800
 comments: true
-categories: software
+categories: 
+- Software Engineering
 ---
 
 I was reading coolshell.cn tonight. The author refers to the chapter of modularity in the book `The Art of Unix Programming` as the most charming chapter. Thus, I searched and read it. When I read the following, I couldn't agree more with the book: 
