@@ -1,103 +1,209 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+//
+//html, body {
+//  background: none;
+//  background-color: white;
+//  font-family: Consolas, monaco, monospace, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;;
+//}
+//
+//body {
+//  max-width: 800px;
+//  >header {
+//    h1 {
+//      width: 100%;
+//      display: block;
+//      a {
+//        color: #000000;
+//      }
+//    }
+//    background: none;
+//  }
+//}
+//
+//article {
+//  >header {
+//    h1.entry-title {
+//      font-size: 150%;
+//    }
+//  }
+//
+//  p {
+//    font-family: $sans;
+//  }
+//
+//
+//  ol, ul {
+//    margin-bottom: 10px;
+//    margin-left: 2.3em;
+//  }
+//
+//  code {
+//    border: none;
+//  }
+//
+//}
+//
+//#blog-archives {
+//  >h2 {
+//    margin-left: 10px;
+//    top: -15px;
+//  }
+//  article {
+//    padding-left: 4.5em;
+//    font-size: 1.125em;
+//    >h1 {
+//      font-size: 120%;
+//    }
+//    >time {
+//      position: static;
+//    }
+//    >footer {
+//    }
+//
+//  }
+//}
+//
+//@media (max-width: 600px) {
+//  #blog-archives {
+//    article {
+//      padding-left: 10px;
+//    }
+//  }
+//}
+//
+//body > footer {
+//  border-radius: 0;
+//  margin-bottom: 0;
+//  background: none;
+//}
+//
+//a.category {
+//  // background: #ddd;
+//  color: #333;
+//  text-decoration: none;
+//  border-radius: 2px;
+//  padding: 2px;
+//  font-style: italic;
+//  text-transform: capitalize;
+//
+//  &:visited, &:hover {
+//    color: #333;
+//    text-decoration: none;
+//  }
+//}
+//
+//#main {
+//  box-shadow: 0 0 1px 1px #ddd;
+//}
+//
+//
+//h1, h2, h3 {
+//  text-transform: capitalize;
+//}
+
 
 html, body {
-  background: none;
   background-color: white;
-  font-family: Consolas, monaco, monospace, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;;
-}
+  padding: 0;
+  margin: 0;
+  max-width: none;
 
-body {
-  max-width: 800px;
-  >header {
-    h1 {
-      width: 100%;
+  > header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+
+    h1, h2 {
+      margin: 0;
       display: block;
-      a {
-        color: #000000;
+    }
+    h1 {
+      height: 50px;
+      line-height: 50px;
+      padding-left: 95px;
+      font-size: 20px;
+      background-color: #2b2b2b;
+    }
+    h2 {
+      border-top: 1px solid #017fd1;
+      padding: 0px 95px;
+      color: #2b2b2b;
+      background-color: #bbf4f9;
+    }
+
+    img {
+      position: absolute;
+      z-index: 100;
+      top: 0px;
+      width: 50px;
+      height: 50px;
+      right: 95px;
+    }
+
+  }
+
+  > footer {
+    margin-bottom: 0;
+    border-radius: 0;
+    background: none;
+    padding: 5px 95px;
+  }
+
+  #main {
+    #content {
+      padding: 20px 95px;
+      article {
+        &.hentry {
+          padding: 0;
+          margin: 0;
+        }
+        h1 {
+          font-size: 17px;
+          display: inline-block;
+
+        }
+        time {
+          position: static;
+        }
+        ol, ul {
+          margin: 0 20px;
+        }
       }
     }
-    background: none;
-  }
-}
-
-article {
-  >header {
-    h1.entry-title {
-      font-size: 150%;
-    }
-  }
-
-  p {
-    font-family: $sans;
-  }
-
-
-  ol, ul {
-    margin-bottom: 10px;
-    margin-left: 2.3em;
-  }
-
-  code {
-    border: none;
-  }
-
-}
-
-#blog-archives {
-  >h2 {
-    margin-left: 10px;
-    top: -15px;
-  }
-  article {
-    padding-left: 4.5em;
-    font-size: 1.125em;
-    >h1 {
-      font-size: 120%;
-    }
-    >time {
-      position: static;
-    }
-    >footer {
-    }
 
   }
 }
 
-@media (max-width: 600px) {
-  #blog-archives {
+@media only screen and (max-width:1000px) {
+  body > header {
+    h1, h2 {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+  }
+  body  #blog-archives {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
     article {
-      padding-left: 10px;
+      padding-left: 35px !important;
+      margin-right: 10px !important;
+    }
+    h1 {
+      display: block !important;
     }
   }
-}
-
-body > footer {
-  border-radius: 0;
-  margin-bottom: 0;
-  background: none;
-}
-
-a.category {
-  // background: #ddd;
-  color: #333;
-  text-decoration: none;
-  border-radius: 2px;
-  padding: 2px;
-  font-style: italic;
-  text-transform: capitalize;
-
-  &:visited, &:hover {
-    color: #333;
-    text-decoration: none;
+  body > footer {
+    padding-left: 35px;
+    padding-right: 35px;
   }
-}
+  #content {
+    padding: 0 !important;
 
-#main {
-  box-shadow: 0 0 1px 1px #ddd;
-}
-
-
-h1, h2, h3 {
-  text-transform: capitalize;
+    article.hentry {
+      padding: 35px !important;
+    }
+  }
 }
