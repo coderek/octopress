@@ -3,6 +3,7 @@ layout: post
 title: "premade sqlite for android"
 date: 2011-05-30 11:00 +0800
 comments: true
+published: false
 categories: android
 ---
 

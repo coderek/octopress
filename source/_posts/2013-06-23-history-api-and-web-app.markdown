@@ -3,7 +3,8 @@ layout: post
 title: "history API and web apps"
 date: 2013-06-23 13:05 +0800
 comments: true
-categories: 
+published: false
+categories:
   - backbonejs
   - html5
 ---

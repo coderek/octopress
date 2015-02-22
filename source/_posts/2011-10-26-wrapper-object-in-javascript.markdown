@@ -3,6 +3,7 @@ layout: post
 title: "wrapper object in javascript"
 date: 2011-10-26 15:35 +0800
 comments: true
+published: false
 categories: JavaScript
 ---
 

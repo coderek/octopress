@@ -3,7 +3,8 @@ layout: post
 title: "Refactor software, really?"
 date: 2011-09-24 15:19 +0800
 comments: true
-categories: 
+published: false
+categories:
 - Software Engineering
 ---
 

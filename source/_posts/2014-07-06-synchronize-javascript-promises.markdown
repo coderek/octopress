@@ -3,7 +3,8 @@ layout: post
 title: "Synchronize JavaScript Promises"
 date: 2014-07-06 14:08:04 -0400
 comments: true
-categories: JavaScript 
+published: false
+categories: JavaScript
 ---
 
 We all know that JavaScript is best known for asynchronous programming. In order to cope with the callback hell in such style, people have introduced concept of promise. [[proposal](https://groups.google.com/forum/#!topic/commonjs/6T9z75fohDk)]

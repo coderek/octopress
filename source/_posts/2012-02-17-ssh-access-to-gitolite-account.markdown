@@ -3,6 +3,7 @@ layout: post
 title: "SSH access to gitolite account"
 date: 2012-02-17 15:56 +0800
 comments: true
+published: false
 categories: tools
 ---
 

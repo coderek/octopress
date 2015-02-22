@@ -3,6 +3,7 @@ layout: post
 title: "小结优化"
 date: 2011-04-11 14:51 +0800
 comments: true
+published: false
 categories: optimization
 ---
 

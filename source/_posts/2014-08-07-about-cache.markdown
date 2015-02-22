@@ -3,7 +3,8 @@ layout: post
 title: "About Cache"
 date: 2014-08-07 19:57:23 -0400
 comments: true
-categories: 
+published: false
+categories:
 ---
 
 In the realm of web app development, caching means accelerating the serving of page requests by storing some files or data in the user's device (protected by user agent) so the user agent doesn't need to download from the server every time. 

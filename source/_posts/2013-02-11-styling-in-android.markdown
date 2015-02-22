@@ -3,6 +3,7 @@ layout: post
 title: "styling in android"
 date: 2013-02-11 09:46 +0800
 comments: true
+published: false
 categories: android
 ---
 

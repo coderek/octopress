@@ -3,7 +3,8 @@ layout: post
 title: "a good use case of sessionStorage"
 date: 2014-08-13 21:10:06 -0400
 comments: true
-categories: html5 
+published: false
+categories: html5
 ---
 
 HTML5 `sessionStorage` allows us to store and retrieve data in user agent. It has same API as `localStorage`. It also has very [good](http://caniuse.com/#search=sessionstorage) browser support. 

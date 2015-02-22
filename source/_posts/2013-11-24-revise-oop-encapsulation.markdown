@@ -3,7 +3,8 @@ layout: post
 title: "Revise OOP - Encapsulation"
 date: 2013-11-24 16:16 +0800
 comments: true
-categories: programming 
+published: false
+categories: programming
 ---
 
 In OOP, objects consist of data and methods. Data can be used to describe the states of the object while methods can be used to change the states of the objects. 

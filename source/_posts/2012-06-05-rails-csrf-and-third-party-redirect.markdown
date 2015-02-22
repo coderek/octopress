@@ -3,7 +3,8 @@ layout: post
 title: "rails CSRF and third party redirect"
 date: 2012-06-05 15:52 +0800
 comments: true
-categories: rails security 
+published: false
+categories: rails security
 ---
 
 今天帮同事解决了一个rails的问题。

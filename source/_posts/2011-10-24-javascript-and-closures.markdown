@@ -3,6 +3,7 @@ layout: post
 title: "JavaScript and Closures"
 date: 2011-10-24 15:37 +0800
 comments: true
+published: false
 categories: JavaScript
 ---
 

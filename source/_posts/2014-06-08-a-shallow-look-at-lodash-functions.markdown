@@ -3,6 +3,7 @@ layout: post
 title: "a shallow look at: lodash - functions"
 date: 2014-06-08 21:15:51 -0400
 comments: true
+published: false
 categories: JavaScript
 ---
 
