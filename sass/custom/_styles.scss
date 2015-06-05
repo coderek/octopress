@@ -1,113 +1,25 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
-//
-//html, body {
-//  background: none;
-//  background-color: white;
-//  font-family: Consolas, monaco, monospace, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;;
-//}
-//
-//body {
-//  max-width: 800px;
-//  >header {
-//    h1 {
-//      width: 100%;
-//      display: block;
-//      a {
-//        color: #000000;
-//      }
-//    }
-//    background: none;
-//  }
-//}
-//
-//article {
-//  >header {
-//    h1.entry-title {
-//      font-size: 150%;
-//    }
-//  }
-//
-//  p {
-//    font-family: $sans;
-//  }
-//
-//
-//  ol, ul {
-//    margin-bottom: 10px;
-//    margin-left: 2.3em;
-//  }
-//
-//  code {
-//    border: none;
-//  }
-//
-//}
-//
-//#blog-archives {
-//  >h2 {
-//    margin-left: 10px;
-//    top: -15px;
-//  }
-//  article {
-//    padding-left: 4.5em;
-//    font-size: 1.125em;
-//    >h1 {
-//      font-size: 120%;
-//    }
-//    >time {
-//      position: static;
-//    }
-//    >footer {
-//    }
-//
-//  }
-//}
-//
-//@media (max-width: 600px) {
-//  #blog-archives {
-//    article {
-//      padding-left: 10px;
-//    }
-//  }
-//}
-//
-//body > footer {
-//  border-radius: 0;
-//  margin-bottom: 0;
-//  background: none;
-//}
-//
-//a.category {
-//  // background: #ddd;
-//  color: #333;
-//  text-decoration: none;
-//  border-radius: 2px;
-//  padding: 2px;
-//  font-style: italic;
-//  text-transform: capitalize;
-//
-//  &:visited, &:hover {
-//    color: #333;
-//    text-decoration: none;
-//  }
-//}
-//
-//#main {
-//  box-shadow: 0 0 1px 1px #ddd;
-//}
-//
-//
-//h1, h2, h3 {
-//  text-transform: capitalize;
-//}
-
 
 html, body {
   background-color: white;
   padding: 0;
   margin: 0;
   max-width: none;
+
+  font-family: Arial, san-serif;
+  font-size: 15px;
+
+  a {
+      text-decoration: none;
+      &:hover {
+          color: #01E2EB;
+      }
+      &:visited {
+          color: #01E2EB;
+      }
+      color: #01E2EB;
+  }
 
   > header {
     margin: 0;
@@ -206,4 +118,66 @@ html, body {
       padding: 35px !important;
     }
   }
+
+}
+a.category {
+  background: rgba(224, 231, 208, 1);
+  padding: 0 10px;
+  display: inline-block;
+  color: chocolate;
+  border-radius: 4px;
+}
+
+.meta {
+    a, a:hover, a:visited {
+        color: #333;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+    .tag {
+        font-size: 14px;
+        font-weight: normal;
+        background: #ded;
+        color: #666;
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
+}
+
+.clearfix {
+    clear: both;
+}
+
+* + table {
+  border-style:solid;
+  border-width:1px;
+  border-color:#e7e3e7;
+}
+
+* + table th, * + table td {
+  border-style:dashed;
+  border-width:1px;
+  border-color:#e7e3e7;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+* + table th {
+  border-style:solid;
+  font-weight:bold;
+  background: url("/images/noise.png?1330434582") repeat scroll left top #F7F3F7;
+}
+
+* + table th[align="left"], * + table td[align="left"] {
+  text-align:left;
+}
+
+* + table th[align="right"], * + table td[align="right"] {
+  text-align:right;
+}
+
+* + table th[align="center"], * + table td[align="center"] {
+  text-align:center;
 }
