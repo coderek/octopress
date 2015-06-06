@@ -44,6 +44,8 @@ also support something called associated values. It is essentially a more generi
 differentiate cases by type signatures.
 
 
+### Enumeration with union types
+
 ```
 enum Resource {
     case INDEX()
@@ -57,6 +59,8 @@ Here is a enumeration of RESTful resource methods. Each of the requests takes in
 parameters. The cases are different from each other by the number of parameters and its order and
 types. So we can test the case by doing the followings:
 
+
+### Fetching associated values from enum
 ```
 let method = Resource.GET(id: 1)
 
@@ -82,6 +86,7 @@ case, enum with associate values does not have rawValues.
 Here is a tricky part. Remember enum is essentially a type/class in swift. It can define methods.
 Thus, we can do something like this.
 
+### Define methods on enum type
 ```
 enum Resource {
     case INDEX()
@@ -107,6 +112,7 @@ let myResouceId = myResouce.getId() // 1
 
 To unleash its full potential, we can use protocol together with enum. Taken from alamofire library:
 
+### Comply protocol, making clean APIs 
 ```
 public protocol URLRequestConvertible {
     /// The URL request.
@@ -205,5 +211,5 @@ enum Router: URLRequestConvertible {
 Alamofire.request(Router.ReadUser("mattt")) // GET /users/mattt
 ```
 
-I think this is a very ingenious usage of enum. Also interesting.
+I think this is a very ingenious usage of enum. Pretty interesting.
 
