@@ -36,7 +36,7 @@ html, body {
       line-height: 50px;
       padding-left: 95px;
       font-size: 20px;
-      background-color: #2b2b2b;
+      background-color: #444;
     }
     h2 {
       border-top: 1px solid #017fd1;
@@ -70,10 +70,22 @@ html, body {
         &.hentry {
           padding: 0;
           margin: 0;
+            a {
+                color: #444;
+                &:hover {
+                    color: #000;
+                    border-bottom: 1px dashed black;
+                }
+            }
         }
+
         h1 {
           font-size: 17px;
           display: inline-block;
+
+          a:hover {
+              text-decoration: none;
+          }
 
         }
         time {
@@ -121,11 +133,16 @@ html, body {
 
 }
 a.category {
-  background: rgba(224, 231, 208, 1);
-  padding: 0 10px;
+  // background: rgba(224, 231, 208, 1);
+  padding: 0;
+  font-style: italic;
   display: inline-block;
   color: chocolate;
   border-radius: 4px;
+
+  &:hover {
+      border-bottom: 1px dashed black;
+  }
 }
 
 .meta {

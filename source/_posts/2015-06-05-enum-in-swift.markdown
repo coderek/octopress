@@ -12,7 +12,7 @@ traditional language and more. Here I use several use cases to illustrate the us
 
 ### Simple enumeration
 
-```
+```swift
 
 enum Status {
     case Active
